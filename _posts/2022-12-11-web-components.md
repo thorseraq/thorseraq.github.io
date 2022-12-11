@@ -24,7 +24,7 @@ customElements.define("word-count", WordCount);
 </body>
 ```
 
-在拥有自定义 WebComponent 能力之前，JavaScript 的浏览器运行时（runtime）会根据 HTML 文档生成标准的 DOM 节点， 标准的 DOM 节点只存储节点相关的信息（图1），我们通常还需要写一些类管理业务状态，再根据业务状态操作 DOM 改变页面。例如，编辑器 Quill 使用 [Parchment](https://github.com/quilljs/parchment)  作为文档模型管理编辑器状态。可以说， Quill 对业务状态的世界观是建立在 Parchment 之上。虽然 DOM 才是对应用户可见的文档模型，但是 Quill 仅仅在第一环和最后一环，即初始化 Parchment（例2）和将编辑器内容渲染到页面时才会操作 DOM。
+在拥有自定义 WebComponent 能力之前，JavaScript 的浏览器运行时（runtime）根据 HTML 文档生成标准的 DOM 节点， 标准的 DOM 节点只存储节点相关的信息（图1），我们通常还需要写一些类管理业务状态，再根据业务状态操作 DOM 改变页面。例如，编辑器 Quill 使用 [Parchment](https://github.com/quilljs/parchment)  作为文档模型管理编辑器状态。可以说， Quill 对业务状态的世界观是建立在 Parchment 之上。虽然 DOM 才是对应用户可见的文档模型，但是 Quill 仅仅在第一环和最后一环，即初始化 Parchment（例2）和将编辑器内容渲染到页面时才会操作 DOM。
 
 图1：HTMLParagraphElement
 
