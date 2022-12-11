@@ -9,8 +9,7 @@ JavaScript 的浏览器运行时会为 HTML 文档生成 DOM 节点， 标准的
 
 图1：HTMLParagraphElement，只存储节点相关的信息
 
-![image-20221211173357666](/Users/xiaotian/Library/Application Support/typora-user-images/image-20221211173357666.png)
-
+![HTMLParagraphElement](https://raw.githubusercontent.com/thorseraq/picb/main/imgs/20221211183849.png)
 例1：Quill 初始化 Parchment
 
 ```typescript
@@ -36,7 +35,7 @@ public build(): void {
 }
 ```
 
-在拥有自定义 WebComponent 能力之前，接触 DOM 的场景是在”外部“，以 cilent 的视角操作 DOM 节点，这其实跟调用任何 api 没有区别。但是当定义 WebComponent 时，`element.querySelector()` 变成了 `this.querySelector()`，`element.attachShadow()` 变成了 `this.attachShadow()`，除了可以在类内部调用常规的 DOM api，此时业务状态也可以添加到类的内部。同时，HTMLELement 也有生命周期钩子可以使用（例2），可以配合事件管理自身状态。组件自己管理业务状态和生命周期，可以减少业务状态维护的难度。也可以设置  [ShadowRoot.mode - Web APIs | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/mode)  使组件对外可见，此时就更像一个 React Component。
+在拥有自定义 WebComponent 能力之前，接触 DOM 的场景是在”外部“，以 cilent 的视角操作 DOM 节点，这其实跟调用任何 api 没有区别。但是当定义 WebComponent 时，`element.querySelector()` 变成了 `this.querySelector()`，`element.attachShadow()` 变成了 `this.attachShadow()`，除了可以在类内部调用常规的 DOM api，此时业务状态也可以添加到类的内部。同时，HTMLELement 也有生命周期钩子可以使用（例2），可以配合事件管理自身状态。组件自己管理业务状态和生命周期，可以减少业务状态维护的难度。也可以设置  [ShadowRoot.mode](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/mode)  使组件对外可见，此时就更像一个 React Component。
 
 例2：[LifeCycle example](https://github.com/mdn/web-components-examples/blob/3bf4d03ce56ce5098709a2693d2e9d92036ee5bc/life-cycle-callbacks/main.js#L2)
 
