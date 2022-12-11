@@ -5,7 +5,7 @@ categories:
  - weekly
 tags:
 ---
-Web Component 提供了自定义可以渲染在页面上的 DOM 节点的能力，一个基本的 Web Component 可以按下面的方式定义。它继承了 HTMLParagraphElement，所以可以像一个普通的 HTMLParagraphElement 一样使用。同时，也可以通过自定义的属性和方法来扩展。因此，一个 Web Component 可以是一个完整的组件，包括样式、行为和 DOM 结构。在使用时，只需要像使用普通的 HTML 元素一样使用即可。
+Web Component 提供了自定义可以渲染在页面上的 DOM 节点的能力，一个基本的 Web Component 可以按下面的方式定义。它继承了 HTMLParagraphElement，所以可以像一个普通的 HTMLParagraphElement 一样使用。同时，也可以通过自定义的属性和方法来扩展。因此，一个 Web Component 可以是一个完整的组件，包括样式、行为和 DOM 结构。在使用时，可以像使用普通的 HTML 元素一样使用。
 
 例1：Customized built-in elements - WordCount
 ```typescript
