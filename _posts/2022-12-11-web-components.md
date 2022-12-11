@@ -54,7 +54,7 @@ public build(): void {
 }
 ```
 
-因此我们接触 DOM 的场景大多是在”外部“，以 cilent 的视角操作 DOM 节点，这种方式和调用任何其他 api 没有区别。但是当定义 WebComponent 类的内部，`element.querySelector()` 变成了 `this.querySelector()`，`element.attachShadow()` 变成了 `this.attachShadow()`，除了可以在类内部调用常规的 DOM api，此时业务状态也可以添加到类的内部。同时，HTMLELement 也有生命周期钩子可以使用（例3），可以配合事件管理自身状态。通过组件自己管理业务状态和生命周期，大大增加了组件可以复用的可能性。如果组件需要接收外部的传入，也可以通过设置 [ShadowRoot.mode](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/mode) 打破组件自身的状态隔离，使组件对外可见，此时就更像一个 React Component。
+因此我们接触 DOM 的场景大多是在”外部“，以 cilent 的视角操作 DOM 节点，这种方式和调用任何其他 api 没有区别。但是当定义 WebComponent 类的内部，`element.querySelector()` 变成了 `this.querySelector()`，`element.attachShadow()` 变成了 `this.attachShadow()`，除了可以在类内部调用常规的 DOM api，此时业务状态也可以添加到类的内部。同时，HTMLELement 也有生命周期钩子可以使用（例3），可以配合事件管理自身状态。通过组件自己管理业务状态和生命周期，大大增加了组件可以复用的可能性。如果组件需要接收外部的传入，也可以通过设置 [ShadowRoot.mode](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/mode) 打破组件自身的状态隔离，使组件对外可见（此时更像一个 React Component）。
 
 例3：[LifeCycle example](https://github.com/mdn/web-components-examples/blob/3bf4d03ce56ce5098709a2693d2e9d92036ee5bc/life-cycle-callbacks/main.js#L2)
 
