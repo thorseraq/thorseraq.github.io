@@ -1,3 +1,11 @@
+---
+title: Git Resolving Conflicts
+description:
+categories:
+- weekly
+  tags: git
+---
+
 在 git 冲突解决时，如果能够理解双方的提交信息，解决起来自然会游刃有余。但是当冲突的内容非常多的时候，作为后备方案，正确运用 git 可以让我们少学很多东西（逃
 
 冲突解决大概有三类方法
