@@ -1,1 +1,1 @@
-使用 http://theme-next.simpleyyt.com/getting-started.html 生成静态博客
+使用 http://theme-next.simpleyyt.com/getting-started.html 生成静态博客。博客地址：https://thorseraq.github.io/
