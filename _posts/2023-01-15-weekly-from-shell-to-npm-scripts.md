@@ -6,7 +6,7 @@ categories:
 tags:
 ---
 
-NPM scripts 是在 package.json 中 `scripts` 中 one-liner 式的命令。使用 `npm run` 加上对应的指令就可以运行对应的脚本，例如 `npm run echoPath` 或者简写为 `npm echoPath`。
+NPM scripts 是在 package.json 中 `scripts` 中 one-liner 式的命令。使用 `npm run` 加上对应的指令就可以运行对应的脚本，例如 `npm run build` 或者简写为 `npm build`。
 
 在运行 NPM scripts 时，会自动新建一个 Shell，在这个 Shell 里面执行指定的脚本命令。因此，只要是 Shell（一般是 Bash）可以运行的命令，就可以写在 npm 脚本里面。 NPM Scripts 的工作目录是 package.json 文件所在的目录，使用 `npm run pwd` 可以验证当前工作目录，注意此时自定义的脚本名称不能简写。NPM 脚本还可以直接调用工作目录下的脚本，`npm run runBash`。NPM 脚本也可以访问当前系统的环境变量，`npm run echoPath`。
 
