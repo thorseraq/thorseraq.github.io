@@ -1,12 +1,12 @@
 ---
-title: z-index 六条
+title: z-index 六条基本规则
 description:
 categories:
 - weekly
 tags:
 ---
 
-### 六条基本规则
+# 六条基本规则
 
 1. HTML 文档默认是 static 布局（通过 position 可以改变布局方式），除了 `<body></body>`，任何一个 DOM 节点也都有 position 值，如果没有设置，那么默认是 static
 
@@ -33,12 +33,16 @@ tags:
 6. 创建 stacking context 的所有方法：https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
 
 
-### Debug 工具:
+# Debug 工具:
 
-Edge 浏览器： 3D View （更推荐，缺点：不同的 stacking context 不能正确显示）
+## Edge 浏览器： 3D View
+
+更推荐，缺点：不同的 stacking context 不能正确显示
 
 ![](https://raw.githubusercontent.com/thorseraq/picb/main/imgs/20230205233125.png)
 
-Chrome：Layer (不是专门用来调试 z-index)
+## Chrome：Layer
+
+不是专门用来调试 z-index
 
 ![](https://raw.githubusercontent.com/thorseraq/picb/main/imgs/20230205233322.png)
