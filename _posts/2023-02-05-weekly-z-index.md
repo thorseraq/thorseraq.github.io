@@ -6,8 +6,6 @@ categories:
 tags:
 ---
 
-# 六条基本规则
-
 1. HTML 文档默认是 static 布局（通过 position 可以改变布局方式），除了 `<body></body>`，任何一个 DOM 节点也都有 position 值，如果没有设置，那么默认是 static
 
 2. static 布局的元素，z-index 无效，文档按照 HTML 顺序渲染，后出现的 DOM 节点在先出现的 DOM 节点上面
@@ -35,7 +33,7 @@ tags:
 
 # Debug 工具:
 
-## Edge 浏览器： 3D View
+## Edge： 3D View
 
 更推荐，缺点：不同的 stacking context 不能正确显示
 
